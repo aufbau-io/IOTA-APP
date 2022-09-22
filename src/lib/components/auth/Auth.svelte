@@ -1,0 +1,67 @@
+<script>
+	import { supabase } from '$lib/clients/supabaseClient';
+
+	let loading = false;
+	let email;
+
+	const handleLogin = async () => {
+		try {
+			loading = true;
+			const { error } = await supabase.auth.signIn({ email });
+			if (error) throw error;
+			alert('Check your email for the login link!');
+		} catch (error) {
+			alert(error.error_description || error.message);
+		} finally {
+			loading = false;
+		}
+	};
+</script>
+
+<form on:submit|preventDefault={handleLogin}>
+	<div>
+		<p class="description">Sign in via magic link with your email below</p>
+		<div>
+			<input class="inputField" type="email" placeholder="Your email" bind:value={email} />
+		</div>
+		<input
+			type="submit"
+			class="button block"
+			value={loading ? 'Loading' : 'Send magic link'}
+			disabled={loading}
+		/>
+	</div>
+</form>
+
+
+<style>
+
+	form {
+		padding: 20px 0;
+	}
+
+	div {
+		padding: 16px 0;
+	}
+
+	input {
+		color: var(--white);
+	}
+
+	input[type='email'] {
+		font-family: nb-architekt, sans-serif;
+		font-size: 40px;
+		line-height: 0px;
+		background: var(--accent);
+		border-bottom: solid 1px var(--black);
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+	input::placeholder {
+		font-family: nb-architekt, sans-serif;
+		color: var(--white);
+	}
+</style>
