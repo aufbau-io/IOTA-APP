@@ -11,7 +11,7 @@
 		mouseY = 0;
 
 	let width = window.innerWidth /4 * 3
-	let height = window.innerHeight
+	let height = window.innerHeight - 51
 
 	let coreAspect_1, coreAspect_2
 
