@@ -32,6 +32,6 @@
 	}
 
 	.active {
-		color: var(--white);
+		color: var(--accent);
 	}
 </style>

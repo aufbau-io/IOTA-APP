@@ -4,13 +4,12 @@
 /* APP */
 :root {
 	--ticker-duration: 70s;
-	--black: #121212;
-	--white: #f0f0f0;
-	--white-10: #f0f0f01a;
-	--white-20: #f0f0f033;
-	--white-30: #f0f0f04d;
-	--white-50: #f0f0f080;
-	--green: #5ca755;
+	--black: #212121;
+	--white: #f4f4f4;
+	--white-10: #f4f4f41a;
+	--white-30: #f4f4f44d;
+	--white-50: #f4f4f480;
+	--accent: #5ca755;
 	--error: #be4040;
 }
 
@@ -73,8 +72,8 @@
 
 body {
 	font-family: nb-architekt, sans-serif;
-	background: var(--green);
-	color: var(--black);
+	background: var(--black);
+	color: var(--white);
 }
 
 /* HEADING */

@@ -28,7 +28,7 @@
 		align-items: center;
 		padding: 0 40px;
 		height: 50px;
-		border-bottom: solid 1px var(--black);
+		border-bottom: solid 1px var(--white);
 		user-select: none;
 	}
 </style>

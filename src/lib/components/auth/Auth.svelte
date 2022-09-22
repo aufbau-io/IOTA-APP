@@ -45,15 +45,15 @@
 	}
 
 	input {
-		color: var(--white);
+		color: var(--accent);
 	}
 
 	input[type='email'] {
 		font-family: nb-architekt, sans-serif;
 		font-size: 40px;
 		line-height: 0px;
-		background: var(--accent);
-		border-bottom: solid 1px var(--black);
+		background: var(--black);
+		border-bottom: solid 1px var(--white);
 	}
 
 	input:focus {
@@ -62,6 +62,6 @@
 
 	input::placeholder {
 		font-family: nb-architekt, sans-serif;
-		color: var(--white);
+		color: var(--accent);
 	}
 </style>
