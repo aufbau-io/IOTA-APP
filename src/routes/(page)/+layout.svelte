@@ -11,6 +11,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>IOTA</title>
+</svelte:head>
+
 <!--svelte:component this={Geometry} /-->
 
 <Header />

@@ -2,7 +2,6 @@
 </script>
 
 <main>
-
 	<div class="title" />
 </main>
 
