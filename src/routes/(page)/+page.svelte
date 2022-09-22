@@ -10,6 +10,9 @@
 
 <main>
 	<div class="sidebar">
+		<p>iota: mental state tracking</p>
+		<p>version: 0.0.1</p>
+		<br>
 		<p>username:</p>
 		<p>password:</p>
 	</div>
