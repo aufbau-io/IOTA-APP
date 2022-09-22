@@ -1,11 +1,9 @@
 <script>
 	import Nav from './nav.svelte';
-	import Logo from './logo.svelte';
-	import Ticker from './ticker.svelte';
 	// stub data out
 	const navItems = [
 		{
-			name: 'MY DAY',
+			name: 'DATA',
 			href: '/'
 		},
 		{
@@ -16,8 +14,7 @@
 </script>
 
 <header>
-	<Logo />
-	<!--Ticker /-->
+	<a href="/"><h6>iota</h6> </a>
 	<Nav {navItems} />
 </header>
 
@@ -26,9 +23,9 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 40px;
+		padding: 0 20px;
 		height: 50px;
-		border-bottom: solid 1px var(--white);
+		border-bottom: solid 1px var(--white-50);
 		user-select: none;
 	}
 </style>
