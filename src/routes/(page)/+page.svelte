@@ -1,5 +1,5 @@
 <script>
-		import { onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	let Geometry;
 
 	onMount(async () => {
@@ -12,7 +12,7 @@
 	<div class="sidebar">
 		<p>iota: mental state tracking</p>
 		<p>version: 0.0.1</p>
-		<br>
+		<br />
 		<p>username:</p>
 		<p>password:</p>
 	</div>
@@ -28,13 +28,13 @@
 	}
 
 	.sidebar {
-		width: calc(100vw / 4);
+		width: calc(100vw / 5);
 		border-right: solid 1px var(--white-50);
 
 		padding: 20px;
 	}
 
 	.geometry {
-		width: calc(100vw / 4 * 3);
+		width: calc(100vw / 5 * 4);
 	}
 </style>
