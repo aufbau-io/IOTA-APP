@@ -65,7 +65,7 @@
 		let b = 3.4 + Math.random() * 3;
 		let f = 9.9 + Math.random() * 4;
 		let g = 1 + Math.random();
-		let t = 0.0005;
+		let t = 0.0001;
 
 		// geometry.vertices.forEach(function (v) {
 		// 	v.x = v.x - t * a * v.x + t * v.y * v.y - t * v.z * v.z + t * a * f;
