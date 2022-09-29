@@ -13,10 +13,7 @@
 
 <nav>
 	{#each navItems as navItem}
-		<a
-			class="SML"
-			href={navItem.href}
-			class:active={navItem.href === $page.url.pathname}
+		<a class="SML" href={navItem.href} class:active={navItem.href === $page.url.pathname}
 			>[&nbsp;{navItem.name}&nbsp;]</a
 		>
 	{/each}
@@ -29,9 +26,15 @@
 		letter-spacing: 0.05em;
 		padding: 10px;
 		cursor: pointer;
+		opacity: 0.4;
 	}
 
-	.active {
-		color: var(--accent);
+	nav a:hover {
+		opacity: 0.6;
+	}
+
+	.active,
+	.active:hover {
+		opacity: 1;
 	}
 </style>

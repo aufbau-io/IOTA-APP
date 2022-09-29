@@ -113,7 +113,7 @@
 		let b = 5.4;
 		let f = 7.9;
 		let g = 1;
-		let t = 0.006;
+		let t = 0.0006;
 		for (let i = 0; i < 100000; i++) {
 			let x1 = x;
 			let y1 = y;
