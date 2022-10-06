@@ -48,15 +48,20 @@
 	}
 
 	.sidebar {
+		/*
 		width: calc(100vw / 5);
-		min-width: 400px;
+		*/
+		width: 400px;
 		border-right: solid 1px var(--white-50);
 		display: block;
 		padding: 20px;
 	}
 
 	.geometry {
+		/*
 		width: calc(100vw / 5 * 4);
+		*/
+		width: calc(100vw - 400);
 	}
 
 	input {

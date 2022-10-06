@@ -7,7 +7,8 @@
 	let scene = new THREE.Scene();
 
 	let height = window.innerHeight;
-	let width = (window.innerWidth / 5) * 4;
+	// let width = (window.innerWidth / 5) * 4;
+	let width = window.innerWidth - 400;
 
 	// Setting up a camera
 	let camera = new THREE.PerspectiveCamera(100, width / height, 0.1, 50);
@@ -93,7 +94,8 @@
 		'resize',
 		function () {
 			let height = window.innerHeight;
-			let width = (window.innerWidth / 5) * 4;
+			// let width = (window.innerWidth / 5) * 4;
+			width = window.innerWidth - 400;
 			camera.aspect = width / height;
 			camera.updateProjectionMatrix();
 			renderer.setSize(width, height);
