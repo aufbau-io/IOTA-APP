@@ -1,10 +1,5 @@
 <script>
 	import Arrow from './arrow.svelte';
-
-	function fuckOff() {
-		console.log('here');
-		alert("YOU'VE HAD TOO MUCH TO DRINK MATE");
-	}
 </script>
 
 <svelte:head>
@@ -13,10 +8,9 @@
 <section>
 	<div class="message">
 		<h2>404 error.</h2>
-		<p class="mono">Take one of these exits to find your&nbsp;way&nbsp;back.</p>
 	</div>
 
-	<div class="nav">
+	<!--div class="nav">
 		<a href="/" class="top-border">
 			<h2>00</h2>
 			<h1>MY DAY</h1>
@@ -27,7 +21,7 @@
 			<h1>ACCOUNT</h1>
 			<Arrow direction="left" />
 		</a>
-	</div>
+	</div-->
 </section>
 
 <style>
