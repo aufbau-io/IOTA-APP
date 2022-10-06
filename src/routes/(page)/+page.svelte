@@ -12,8 +12,14 @@
 
 <main>
 	<div class="sidebar">
-		<p>iota: mental state tracking</p>
-		<p>version: 0.0.1</p>
+		<div class="row">
+			<p class="field">iota:</p>
+			<p>mental state tracking</p>
+		</div>
+		<div class="row">
+			<p class="field">version:</p>
+			<p>0.0.1</p>
+		</div>
 		<br />
 
 		<form>
@@ -43,7 +49,7 @@
 
 	.sidebar {
 		width: calc(100vw / 5);
-		min-width: 300px;
+		min-width: 400px;
 		border-right: solid 1px var(--white-50);
 		display: block;
 		padding: 20px;
