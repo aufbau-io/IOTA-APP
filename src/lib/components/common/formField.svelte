@@ -22,15 +22,13 @@
 	form {
 		display: flex;
 		flex-direction: column;
-		min-width: 388px;
-		wid: 100%;
+		width: 100%;
 	}
 
 	input {
 		background: none;
 		border-bottom: solid 1px var(--white);
-		margin: 6px 0;
-		padding: 6px 0;
+		margin: 2px 0;
 		display: block;
 	}
 

@@ -1,5 +1,8 @@
 <script>
+	import { user } from '$lib/store/sessionStore';
 	import { page } from '$app/stores';
+
+	let loggedIn = false;
 
 	export let navItems = [];
 	export async function load() {
@@ -12,11 +15,15 @@
 </script>
 
 <nav>
-	{#each navItems as navItem}
-		<a class="SML" href={navItem.href} class:active={navItem.href === $page.url.pathname}
-			>[&nbsp;{navItem.name}&nbsp;]</a
-		>
-	{/each}
+	{#if loggedIn}
+		{#each navItems as navItem}
+			<a href={navItem.href} class:active={navItem.href === $page.url.pathname}
+				>[&nbsp;{navItem.name}&nbsp;]</a
+			>
+		{/each}
+	{:else}
+		<a href="https://aufbau.io">EIN AUFBAU DING</a>
+	{/if}
 </nav>
 
 <style>
