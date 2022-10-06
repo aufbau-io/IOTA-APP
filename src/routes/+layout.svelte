@@ -4,6 +4,24 @@
 
 	let screenType;
 	onMount(async () => {
+		// ---------------------------------------------------------------------------
+		// HEIGHT
+		// ---------------------------------------------------------------------------
+
+		// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+		let vh = window.innerHeight * 0.01;
+		// Then we set the value in the --vh custom property to the root of the document
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+		window.addEventListener('resize', () => {
+			// We execute the same script as before
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		});
+
+		// ---------------------------------------------------------------------------
+		// SCREEN
+		// ---------------------------------------------------------------------------
 		const ua = navigator.userAgent;
 		if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
 			// tablet
@@ -40,6 +58,8 @@
 			justify-content: center;
 
 			height: 100vh;
+			height: calc(var(--vh, 1vh) * 100);
+
 			width: 100vw;
 			background: var(--black);
 			z-index: 1000;
