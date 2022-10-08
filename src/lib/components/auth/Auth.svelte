@@ -33,9 +33,7 @@
 	</div>
 </form>
 
-
 <style>
-
 	form {
 		padding: 20px 0;
 	}
@@ -52,8 +50,8 @@
 		font-family: nb-architekt, sans-serif;
 		font-size: 40px;
 		line-height: 0px;
-		background: var(--black);
-		border-bottom: solid 1px var(--white);
+		background: var(--background);
+		border-bottom: solid 1px var(--primary);
 	}
 
 	input:focus {

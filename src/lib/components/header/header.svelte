@@ -25,7 +25,7 @@
 		align-items: center;
 		padding: 0 20px;
 		height: 50px;
-		border-bottom: solid 1px var(--white-50);
+		border-bottom: solid 1px var(--primary-50);
 		user-select: none;
 	}
 </style>

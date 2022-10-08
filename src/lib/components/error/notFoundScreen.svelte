@@ -63,11 +63,11 @@
 		width: 100%;
 		height: 100%;
 		margin: auto;
-		border-bottom: solid var(--black) 2px;
+		border-bottom: solid var(--background) 2px;
 		padding: 0 1rem;
 
 		align-items: center;
-		stroke: var(--black);
+		stroke: var(--background);
 	}
 
 	.nav h2 {
@@ -81,13 +81,13 @@
 	}
 
 	.nav a:hover {
-		background: var(--black);
+		background: var(--background);
 		color: var(--green);
 		stroke: var(--green);
 	}
 
 	.nav a.top-border {
-		border-top: solid var(--black) 2px;
+		border-top: solid var(--background) 2px;
 	}
 
 	@media only screen and (max-width: 976px) {

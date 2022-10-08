@@ -34,6 +34,6 @@
 	.disabled:hover {
 		opacity: 0.5;
 		cursor: default;
-		color: var(--white);
+		color: var(--primary);
 	}
 </style>

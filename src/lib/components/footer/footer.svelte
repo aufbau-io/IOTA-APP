@@ -17,8 +17,8 @@
 		width: 100vw;
 		padding: 0 20px;
 		background: #121212bb;
-		border-bottom: solid 1px var(--white-50);
-		color: var(--white);
+		border-bottom: solid 1px var(--primary-50);
+		color: var(--primary);
 	}
 
 	.base {
@@ -29,6 +29,6 @@
 	}
 
 	.semi {
-		color: var(--white-20);
+		color: var(--primary-20);
 	}
 </style>

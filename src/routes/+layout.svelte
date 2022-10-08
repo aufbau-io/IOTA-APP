@@ -61,7 +61,7 @@
 			height: calc(var(--vh, 1vh) * 100);
 
 			width: 100vw;
-			background: var(--black);
+			background: var(--background);
 			z-index: 1000;
 		}
 	}

@@ -52,7 +52,7 @@
 		width: calc(100vw / 5);
 		*/
 		width: 400px;
-		border-right: solid 1px var(--white-50);
+		border-right: solid 1px var(--primary-50);
 		display: block;
 		padding: 20px;
 	}
@@ -66,7 +66,7 @@
 
 	input {
 		background: none;
-		border-bottom: solid 1px var(--white);
+		border-bottom: solid 1px var(--primary);
 		margin-bottom: 10px;
 		width: 60%;
 	}

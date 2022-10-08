@@ -27,7 +27,7 @@
 
 	input {
 		background: none;
-		border-bottom: solid 1px var(--white);
+		border-bottom: solid 1px var(--primary);
 		margin: 2px 0;
 		display: block;
 	}
