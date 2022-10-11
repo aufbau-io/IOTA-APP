@@ -1,5 +1,5 @@
 <script>
-	import { user } from '$lib/store/sessionStore';
+	import { user } from '$lib/store/store';
 	import { page } from '$app/stores';
 
 	let loggedIn = false;
@@ -27,7 +27,12 @@
 </nav>
 
 <style>
-	nav a {
+	nav {
+		display: flex;
+		flex-flow: comumn nowrap;
+	}
+	nav a,
+	nav p {
 		line-height: 110%;
 		font-weight: 400;
 		letter-spacing: 0.05em;
