@@ -3,9 +3,16 @@ IOTA - MENTAL HEALTH TRACKING \
 www.iota.health \
 wip
 
-### Build / Serve
+### serve
 
 ```
 $ yarn
-$ yarn start
+$ yarn dev
+```
+
+### Build
+
+```
+$ yarn
+$ yarn build
 ```
