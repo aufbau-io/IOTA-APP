@@ -3,7 +3,7 @@ IOTA - MENTAL HEALTH TRACKING \
 www.iota.health \
 wip
 
-### serve
+### Serve
 
 ```
 $ yarn
