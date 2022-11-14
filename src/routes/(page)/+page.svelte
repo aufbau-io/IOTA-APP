@@ -78,7 +78,8 @@
 	}
 
 	h4 {
-		letter-spacing: 1px;
+		letter-spacing: 0.02em;
+		font-family: nb-architekt;
 	}
 
 	.row {
