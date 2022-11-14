@@ -103,7 +103,7 @@
 		function () {
 			let height = window.innerHeight;
 			// let width = (window.innerWidth / 5) * 4;
-			width = window.innerWidth - 400;
+			width = window.innerWidth;
 			camera.aspect = width / height;
 			camera.updateProjectionMatrix();
 			renderer.setSize(width, height);
