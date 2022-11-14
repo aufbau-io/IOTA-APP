@@ -66,6 +66,10 @@
 	}
 
 	input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
 		background: none;
 		border-bottom: solid 1px var(--primary);
 		margin-bottom: 10px;
