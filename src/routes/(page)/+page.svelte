@@ -2,54 +2,46 @@
 	import { onMount } from 'svelte';
 	import FormField from '$lib/components/common/formField.svelte';
 	import Button from '$lib/components/common/button.svelte';
-	let Geometry;
+	// let Geometry;
 
-	onMount(async () => {
-		const module = await import('$lib/components/geometry/geometry.svelte');
-		Geometry = module.default;
-	});
+	// onMount(async () => {
+	// 	const module = await import('$lib/components/geometry/geometry.svelte');
+	// 	Geometry = module.default;
+	// });
 </script>
 
 <main>
-	<div class="sidebar">
-		<div class="row">
-			<p class="field">iota:</p>
-			<p>mental state tracking</p>
-		</div>
-		<div class="row">
-			<p class="field">version:</p>
-			<p class="mono">0.0.1</p>
-		</div>
-		<br />
-
-		<form>
-			<div class="row">
-				<p class="field">username:</p>
-				<input type="text" />
-			</div>
-			<div class="row">
-				<p class="field">password:</p>
-				<input type="password" />
-			</div>
-			<div class="row right">
-				<Button text="log in" />
-			</div>
-		</form>
+	<div class="row">
+		<p class="field">iota:</p>
+		<p>mental state tracking</p>
 	</div>
-	<svelte:component this={Geometry} />
+	<div class="row">
+		<p class="field">version:</p>
+		<p class="mono">0.0.1</p>
+	</div>
+	<br />
+
+	<form>
+		<div class="row">
+			<p class="field">username:</p>
+			<input type="text" />
+		</div>
+		<div class="row">
+			<p class="field">password:</p>
+			<input type="password" />
+		</div>
+		<div class="row right">
+			<Button text="log in" />
+		</div>
+	</form>
+	<!-- <svelte:component this={Geometry} /> -->
 </main>
 
 <style>
 	main {
 		position: relative;
 		overflow: hidden;
-		display: flex;
-	}
 
-	.sidebar {
-		/*
-		width: calc(100vw / 5);
-		*/
 		position: absolute;
 		top: 50%;
 		left: 50%;
