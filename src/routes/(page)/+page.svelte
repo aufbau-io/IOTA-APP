@@ -104,5 +104,8 @@
 		.sidebar {
 			padding: 20px;
 		}
+		form {
+			padding-bottom: 0;
+		}
 	}
 </style>
