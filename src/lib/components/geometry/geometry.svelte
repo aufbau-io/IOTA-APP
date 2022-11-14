@@ -40,7 +40,7 @@
 
 	// Generating a cloud of point
 	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0x232323);
+	pcMat.color = new THREE.Color(0xfafafa);
 	pcMat.transparent = true;
 	pcMat.size = 0.05;
 	// pcMat.blending = THREE.AdditiveBlending;
@@ -52,11 +52,11 @@
 
 	scene.add(group);
 
-	{
-		const color = 0xfafafa;
-		const density = 0.03;
-		scene.fog = new THREE.FogExp2(color, density);
-	}
+	// {
+	// 	const color = 0xfafafa;
+	// 	const density = 0.03;
+	// 	scene.fog = new THREE.FogExp2(color, density);
+	// }
 
 	group.rotation.y += Math.PI / 2;
 
@@ -147,7 +147,21 @@
 	.geometry {
 		overflow: hidden;
 		opacity: 0.8;
-		background: var(--background);
 		z-index: -10;
+
+		background: linear-gradient(0.33turn, #f6a192, #ffd9df, #f6c492, #f6a192);
+		background-size: 400% 400%;
+	}
+
+	@keyframes GradientBackground {
+		0% {
+			transform: translate(0, -50%);
+		}
+		50% {
+			transform: translate(-75%, 0);
+		}
+		100% {
+			transform: translate(0, -50%);
+		}
 	}
 </style>
