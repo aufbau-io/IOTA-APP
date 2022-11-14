@@ -77,6 +77,10 @@
 		outline: none;
 	}
 
+	h4 {
+		letter-spacing: 1px;
+	}
+
 	.row {
 		width: 100%;
 		display: flex;
