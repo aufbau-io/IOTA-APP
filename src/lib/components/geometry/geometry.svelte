@@ -53,7 +53,7 @@
 	scene.add(group);
 
 	{
-		const color = 0xf0f0f0;
+		const color = 0xfafafa;
 		const density = 0.03;
 		scene.fog = new THREE.FogExp2(color, density);
 	}
@@ -75,6 +75,10 @@
 		let f = 9.9 + Math.random() * 4;
 		let g = 1 + Math.random();
 		let t = 0.0001;
+
+		// group.rotation.x += 0.001;
+		// group.rotation.y += 0.001;
+		// group.rotation.z += 0.001;
 
 		// geometry.vertices.forEach(function (v) {
 		// 	v.x = v.x - t * a * v.x + t * v.y * v.y - t * v.z * v.z + t * a * f;
@@ -119,11 +123,11 @@
 		let x = 0.01,
 			y = 0.01,
 			z = 0.01;
-		let a = 4.9;
-		let b = 5.4;
-		let f = 7.9;
+		let a = 3.9;
+		let b = 3.4;
+		let f = 6;
 		let g = 1;
-		let t = 0.0006;
+		let t = 0.0003;
 		for (let i = 0; i < 100000; i++) {
 			let x1 = x;
 			let y1 = y;
@@ -142,7 +146,7 @@
 <style>
 	.geometry {
 		overflow: hidden;
-		opacity: 0.9;
+		opacity: 0.8;
 		background: var(--background);
 		z-index: -10;
 	}
