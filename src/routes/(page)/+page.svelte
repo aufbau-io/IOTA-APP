@@ -92,7 +92,7 @@
 	}
 
 	@media only screen and (max-width: 768px) {
-		.sidebar {
+		main {
 			padding: 20px;
 		}
 		form {
