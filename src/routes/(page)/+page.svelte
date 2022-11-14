@@ -12,12 +12,17 @@
 
 <main>
 	<div class="row">
-		<p class="field">iota:</p>
-		<p>mental state tracking</p>
+		<p class="field" />
 	</div>
 	<div class="row">
-		<p class="field">version:</p>
-		<p class="mono">0.0.1</p>
+		<h4 class="field">IOTA</h4>
+		<div>
+			<p>mental state tracking</p>
+			<p class="mono">version: 0.0.1</p>
+		</div>
+	</div>
+	<div class="row">
+		<p class="field" />
 	</div>
 	<br />
 
