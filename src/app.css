@@ -3,15 +3,40 @@
 
 /* APP */
 :root {
-	--ticker-duration: 70s;
-	--black: #171717;
-	--white: #f4f4f4;
-	--white-10: #f4f4f41a;
-	--white-30: #f4f4f44d;
-	--white-50: #f4f4f480;
+	--background: #f0f0f0;
+	--primary: #232323;
+	--primary-10: #2323231a;
+	--primary-30: #2323234d;
+	--primary-50: #23232380;
+	--accent: #a055a7;
+	--error: #be4040;
+}
+
+/*
+// dark
+:root {
+	--background: #171717;
+	--primary: #f4f4f4;
+	--primary-10: #f4f4f41a;
+	--primary-30: #f4f4f44d;
+	--primary-50: #f4f4f480;
 	--accent: #5ca755;
 	--error: #be4040;
 }
+*/
+
+/*
+// light
+:root {
+	--background: #f0f0f0;
+	--primary: #232323;
+	--primary-10: #2323231a;
+	--primary-30: #2323234d;
+	--primary-50: #23232380;
+	--accent: #a055a7;
+	--error: #be4040;
+}
+*/
 
 @font-face {
 	font-family: nb-architekt;
@@ -49,6 +74,16 @@
 	src: url(/fonts/NB-Television-Pro-Mono-3D.woff) format('woff');
 }
 
+@font-face {
+	font-family: untitled-sans;
+	src: url(/fonts/test-untitled-sans-light.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: untitled-serif;
+	src: url(/fonts/test-untitled-serif-regular.woff2) format('woff2');
+}
+
 /* CUSTOM SCROLLBAR */
 
 /* width */
@@ -59,21 +94,22 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: var(--black);
+	background: var(--background);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: var(--black);
+	background: var(--background);
 	border-radius: 0;
 }
 
 /* END CUSTOM SCROLLBAR */
 
 body {
-	font-family: nb-architekt, sans-serif;
-	background: var(--black);
-	color: var(--white);
+	font-family: untitled-sans;
+	text-transform: uppercase;
+	background: var(--background);
+	color: var(--primary);
 }
 
 /* HEADING */
@@ -83,7 +119,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: nb-architekt, sans-serif;
+	font-family: untitled-sans;
 }
 h1 {
 	font-size: 120px;
@@ -146,7 +182,7 @@ p.xs {
 /* MONO */
 span.mono,
 p.mono {
-	font-family: 'Roboto Mono', monospace;
+	font-family: nb-architekt, untitled-sans, sans-serif;
 }
 
 span.lrg.mono,

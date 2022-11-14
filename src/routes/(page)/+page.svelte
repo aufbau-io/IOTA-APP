@@ -18,7 +18,7 @@
 		</div>
 		<div class="row">
 			<p class="field">version:</p>
-			<p>0.0.1</p>
+			<p class="mono">0.0.1</p>
 		</div>
 		<br />
 
@@ -42,7 +42,6 @@
 <style>
 	main {
 		position: relative;
-		height: calc(100vh - 51px);
 		overflow: hidden;
 		display: flex;
 	}
@@ -51,24 +50,26 @@
 		/*
 		width: calc(100vw / 5);
 		*/
-		width: 400px;
-		border-right: solid 1px var(--white-50);
-		display: block;
-		padding: 20px;
-	}
+		position: absolute;
+		top: 50%;
+		left: 50%;
 
-	.geometry {
-		/*
-		width: calc(100vw / 5 * 4);
-		*/
-		width: calc(100vw - 400);
+		width: 400px;
+		max-width: calc(100vw - 40px);
+
+		transform: translate(-50%, -50%);
+		background: var(--background);
+
+		border: solid 1px var(--primary-50);
+		padding: 30px;
+		box-shadow: 0.5px 0.5px 2px var(--primary-50);
 	}
 
 	input {
 		background: none;
-		border-bottom: solid 1px var(--white);
+		border-bottom: solid 1px var(--primary);
 		margin-bottom: 10px;
-		width: 60%;
+		width: 65%;
 	}
 	input:focus {
 		outline: none;
@@ -85,11 +86,17 @@
 	}
 
 	.field {
-		width: 40%;
+		width: 35%;
 		display: inline;
 	}
 
 	form {
-		padding-bottom: 20px;
+		padding-bottom: 10px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.sidebar {
+			padding: 20px;
+		}
 	}
 </style>

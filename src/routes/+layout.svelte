@@ -40,29 +40,28 @@
 	});
 </script>
 
-{#if screenType == 1 || screenType == 2}
+<!-- {#if screenType == 1 || screenType == 2} -->
+{#if false}
 	<div id="phoneBlock"><p class="sml">wip, use desktop</p></div>
 {:else}
 	<slot />
 {/if}
 
 <style>
-	@media only screen and (max-width: 768px) {
-		#phoneBlock {
-			position: absolute;
-			top: 0;
-			left: 0;
+	#phoneBlock {
+		position: absolute;
+		top: 0;
+		left: 0;
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-			height: 100vh;
-			height: calc(var(--vh, 1vh) * 100);
+		height: 100vh;
+		height: calc(var(--vh, 1vh) * 100);
 
-			width: 100vw;
-			background: var(--black);
-			z-index: 1000;
-		}
+		width: 100vw;
+		background: var(--background);
+		z-index: 1000;
 	}
 </style>

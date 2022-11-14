@@ -8,20 +8,24 @@
 
 	let height = window.innerHeight;
 	// let width = (window.innerWidth / 5) * 4;
-	let width = window.innerWidth - 400;
+	let width = window.innerWidth;
 
 	// Setting up a camera
-	let camera = new THREE.PerspectiveCamera(100, width / height, 0.1, 50);
+	let camera = new THREE.PerspectiveCamera(70, width / height, 0.1, 50);
 	camera.position.z = 30;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0x171717, 1);
+	renderer.setClearColor(0xfafafa, 0);
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
+
+	// ---------------------------------------------------------------------------
+
+	// ---------------------------------------------------------------------------
 
 	// Setting up a group to hold the items we will be creating together
 	let group = new THREE.Group();
@@ -36,10 +40,10 @@
 
 	// Generating a cloud of point
 	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0x5ca755);
+	pcMat.color = new THREE.Color(0x232323);
 	pcMat.transparent = true;
 	pcMat.size = 0.05;
-	pcMat.blending = THREE.AdditiveBlending;
+	// pcMat.blending = THREE.AdditiveBlending;
 	pc = new THREE.Points(geometry, pcMat);
 	pc.sizeAttenuation = true;
 	pc.sortPoints = true;
@@ -48,7 +52,11 @@
 
 	scene.add(group);
 
-	let prevFog = true;
+	{
+		const color = 0xf0f0f0;
+		const density = 0.03;
+		scene.fog = new THREE.FogExp2(color, density);
+	}
 
 	group.rotation.y += Math.PI / 2;
 
@@ -95,7 +103,7 @@
 		function () {
 			let height = window.innerHeight;
 			// let width = (window.innerWidth / 5) * 4;
-			width = window.innerWidth - 400;
+			width = window.innerWidth;
 			camera.aspect = width / height;
 			camera.updateProjectionMatrix();
 			renderer.setSize(width, height);
@@ -135,5 +143,7 @@
 	.geometry {
 		overflow: hidden;
 		opacity: 0.9;
+		background: var(--background);
+		z-index: -10;
 	}
 </style>

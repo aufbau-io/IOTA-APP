@@ -1,5 +1,5 @@
 <script>
-	import { user } from '$lib/store/sessionStore';
+	import { user } from '$lib/store/store';
 	import { supabase } from '$lib/clients/supabaseClient';
 	import Auth from '$lib/components/auth/Auth.svelte';
 	import Profile from '$lib/components/auth/Profile.svelte';

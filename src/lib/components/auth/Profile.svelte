@@ -1,6 +1,6 @@
 <script>
 	import { supabase } from '$lib/clients/supabaseClient';
-	import { user } from '$lib/store/sessionStore';
+	import { user } from '$lib/store/store';
 
 	let loading = true;
 	let username = null;
