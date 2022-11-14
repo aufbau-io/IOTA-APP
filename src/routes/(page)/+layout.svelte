@@ -7,7 +7,7 @@
 	<title>IOTA</title>
 </svelte:head>
 
-<Header />
+<!-- <Header /> -->
 <main>
 	<slot />
 </main>
