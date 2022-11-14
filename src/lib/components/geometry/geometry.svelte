@@ -148,20 +148,5 @@
 		overflow: hidden;
 		opacity: 0.8;
 		z-index: -10;
-
-		background: linear-gradient(0.33turn, #f6a192, #ffd9df, #f6c492, #f6a192);
-		background-size: 400% 400%;
-	}
-
-	@keyframes GradientBackground {
-		0% {
-			transform: translate(0, -50%);
-		}
-		50% {
-			transform: translate(-75%, 0);
-		}
-		100% {
-			transform: translate(0, -50%);
-		}
 	}
 </style>
