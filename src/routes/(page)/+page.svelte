@@ -70,6 +70,8 @@
 		-moz-appearance: none;
 		appearance: none;
 
+		outline: none;
+		border-radius: 0;
 		background: none;
 		border-bottom: solid 1px var(--primary);
 		margin-bottom: 10px;
