@@ -75,7 +75,7 @@
 	}
 
 	.shift {
-		transform: translate(-8px, 0);
+		transform: translate(-5px, -5px);
 	}
 
 	input {
