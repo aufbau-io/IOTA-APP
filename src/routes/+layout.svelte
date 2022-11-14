@@ -40,7 +40,8 @@
 	});
 </script>
 
-{#if screenType == 1 || screenType == 2}
+<!-- {#if screenType == 1 || screenType == 2} -->
+{#if false}
 	<div id="phoneBlock"><p class="sml">wip, use desktop</p></div>
 {:else}
 	<slot />

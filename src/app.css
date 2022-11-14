@@ -182,7 +182,7 @@ p.xs {
 /* MONO */
 span.mono,
 p.mono {
-	font-family: 'Roboto Mono', monospace;
+	font-family: nb-architekt, untitled-sans, sans-serif;
 }
 
 span.lrg.mono,

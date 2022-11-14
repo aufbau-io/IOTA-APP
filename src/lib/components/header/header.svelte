@@ -19,19 +19,27 @@
 </script>
 
 <header>
-	<a href="/"><h6>iota</h6> </a>
 	<div />
+	<!-- <a href="/"><h6>iota</h6> </a> -->
+	<!-- <div />
 	<div on:click={() => toggleDarkMode()} class="darkMode">
 		<p class:selected={$darkMode == true}>day</p>
 		<p class="selected">/</p>
 		<p class:selected={$darkMode == false}>night</p>
-	</div>
+	</div> -->
 
 	<Nav {navItems} />
 </header>
 
 <style>
 	header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+
+		z-index: 20;
+
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
