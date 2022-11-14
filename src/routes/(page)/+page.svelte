@@ -28,11 +28,11 @@
 
 	<form>
 		<div class="row">
-			<p class="field">username:</p>
+			<p class="field">username</p>
 			<input type="text" />
 		</div>
 		<div class="row">
-			<p class="field">password:</p>
+			<p class="field">password</p>
 			<input type="password" />
 		</div>
 		<div class="row right">
