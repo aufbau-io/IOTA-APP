@@ -11,42 +11,42 @@
 </script>
 
 <main>
-	<div class="row">
-		<p class="field" />
-	</div>
-	<div class="row">
-		<h4 class="field">IOTA</h4>
-		<div>
-			<p>mental state tracking</p>
-			<p class="mono">version: 0.0.1</p>
+	<div class="shift">
+		<div class="row">
+			<p class="field" />
 		</div>
-	</div>
-	<div class="row">
-		<p class="field" />
-	</div>
-	<br />
+		<div class="row">
+			<h4 class="title">IOTA</h4>
+			<div>
+				<p>mental state tracking</p>
+				<p class="mono">version: 0.0.1</p>
+			</div>
+		</div>
+		<div class="row">
+			<p class="field" />
+		</div>
+		<br />
 
-	<form>
-		<div class="row">
-			<p class="field">username</p>
-			<input type="text" />
-		</div>
-		<div class="row">
-			<p class="field">password</p>
-			<input type="password" />
-		</div>
-		<div class="row right">
-			<Button text="log in" />
-		</div>
-	</form>
+		<form>
+			<div class="row">
+				<p class="field">username</p>
+				<input type="text" />
+			</div>
+			<div class="row">
+				<p class="field">password</p>
+				<input type="password" />
+			</div>
+			<div class="row right">
+				<Button text="log in" />
+			</div>
+		</form>
+	</div>
 	<!-- <svelte:component this={Geometry} /> -->
+	<div class="shadow" />
 </main>
 
 <style>
 	main {
-		position: relative;
-		overflow: hidden;
-
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -54,12 +54,28 @@
 		width: 400px;
 		max-width: calc(100vw - 40px);
 
-		transform: translate(-50%, -50%);
+		transform: translate(calc(-50% + 5px), -50%);
 		background: var(--background);
 
-		border: solid 1px var(--primary-50);
+		border: solid 1px var(--primary);
 		padding: 30px;
-		box-shadow: 0.5px 0.5px 2px var(--primary-50);
+	}
+
+	.shadow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: -1;
+
+		height: 100%;
+		width: 100%;
+		transform: translate(calc(-50% - 10px), calc(-50% - 10px));
+		background: var(--background);
+		border: solid 1px var(--primary);
+	}
+
+	.shift {
+		transform: translate(-8px, 0);
 	}
 
 	input {
@@ -78,7 +94,6 @@
 	}
 
 	h4 {
-		letter-spacing: 0.02em;
 		font-family: nb-architekt;
 	}
 
@@ -94,6 +109,11 @@
 	}
 
 	.field {
+		width: 35%;
+		display: inline;
+	}
+
+	.title {
 		width: 35%;
 		display: inline;
 	}
