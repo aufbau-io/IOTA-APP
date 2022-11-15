@@ -59,7 +59,7 @@
 		transform: translate(calc(-50% + 12px), -50%);
 
 		border: solid 1px var(--primary-50);
-		padding: 30px;
+		padding: 40px 30px;
 	}
 
 	.shadow {

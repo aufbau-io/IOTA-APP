@@ -12,7 +12,7 @@
 
 	// Setting up a camera
 	let camera = new THREE.PerspectiveCamera(70, width / height, 0.1, 50);
-	camera.position.z = 30;
+	camera.position.z = 15;
 
 	// Setting up the renderer. This will be called later to render scene with the camera setup above
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -40,9 +40,9 @@
 
 	// Generating a cloud of point
 	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0xfafafa);
+	pcMat.color = new THREE.Color(0xd0d0d0);
 	pcMat.transparent = true;
-	pcMat.size = 0.05;
+	pcMat.size = 0.02;
 	// pcMat.blending = THREE.AdditiveBlending;
 	pc = new THREE.Points(geometry, pcMat);
 	pc.sizeAttenuation = true;
