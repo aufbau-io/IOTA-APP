@@ -5,9 +5,9 @@
 :root {
 	--background: #232323;
 	--primary: #fafafa;
-	--primary-10: #2323231a;
-	--primary-30: #2323234d;
-	--primary-50: #23232380;
+	--primary-10: #fafafa1a;
+	--primary-30: #fafafa4d;
+	--primary-50: #fafafa80;
 	--accent: #f6a192;
 	--error: #be4040;
 }

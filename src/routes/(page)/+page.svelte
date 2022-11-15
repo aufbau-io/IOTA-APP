@@ -58,7 +58,7 @@
 		background: var(--background);
 		transform: translate(calc(-50% + 12px), -50%);
 
-		border: solid 1px var(--primary);
+		border: solid 1px var(--primary-50);
 		padding: 30px;
 	}
 
@@ -72,7 +72,7 @@
 		width: 100%;
 		transform: translate(calc(-50% - 12px), calc(-50% - 12px));
 		background: var(--background);
-		border: solid 1px var(--primary);
+		border: solid 1px var(--primary-50);
 	}
 
 	.shift {
