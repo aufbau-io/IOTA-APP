@@ -56,7 +56,7 @@
 		width: 400px;
 		max-width: calc(100vw - 40px);
 		background: var(--background);
-		transform: translate(calc(-50% + 12px), -50%);
+		transform: translate(calc(-50% + 6px), -50%);
 
 		border: solid 1px var(--primary-50);
 		padding: 40px 30px;
