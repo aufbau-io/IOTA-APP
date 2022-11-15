@@ -1,4 +1,4 @@
-# IOTA
+# IOTA APP
 IOTA - MENTAL HEALTH TRACKING \
 www.iota.health \
 wip
