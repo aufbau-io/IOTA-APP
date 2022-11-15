@@ -129,7 +129,7 @@
 
 	@media only screen and (max-width: 768px) {
 		main {
-			padding: 20px;
+			padding: 32px 20px;
 		}
 		form {
 			padding-bottom: 0;
