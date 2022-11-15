@@ -38,7 +38,7 @@
 				<p class="field">password</p>
 				<input type="password" />
 			</div>
-			<div class="row right">
+			<div class="row right muted">
 				<Button text="log in" />
 			</div>
 		</form>
@@ -80,8 +80,8 @@
 		transform: translate(-12px, -6px);
 	}
 
-	.accent {
-		color: var(--accent);
+	.muted {
+		color: var(--primary-50);
 	}
 
 	input {
