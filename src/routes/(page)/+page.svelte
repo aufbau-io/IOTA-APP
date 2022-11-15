@@ -90,7 +90,7 @@
 
 		border-radius: 0;
 		background: none;
-		border-bottom: solid 1px var(--primary);
+		border-bottom: solid 1px var(--primary-50);
 		margin-bottom: 10px;
 		width: 65%;
 	}
