@@ -21,7 +21,7 @@
 			<h4 class="title">IOTA</h4>
 			<div>
 				<p>mental state tracking</p>
-				<p class="mono">version: 0.0.1</p>
+				<p class="mono accent">version: 0.0.1</p>
 			</div>
 		</div>
 		<div class="row">
@@ -58,7 +58,7 @@
 		background: var(--background);
 		transform: translate(calc(-50% + 6px), -50%);
 
-		border: solid 1px var(--primary-50);
+		border: solid 1px var(--accent);
 		padding: 40px 30px;
 	}
 
@@ -77,6 +77,10 @@
 
 	.shift {
 		transform: translate(-12px, -6px);
+	}
+
+	.accent {
+		color: var(--accent);
 	}
 
 	input {
