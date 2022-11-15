@@ -59,6 +59,7 @@
 		transform: translate(calc(-50% + 6px), -50%);
 
 		border: solid 1px var(--accent);
+		color: var(--accent);
 		padding: 40px 30px;
 	}
 
@@ -72,7 +73,7 @@
 		width: 100%;
 		transform: translate(calc(-50% - 12px), calc(-50% - 12px));
 		background: var(--background);
-		border: solid 1px var(--primary-50);
+		border: solid 1px var(--accent);
 	}
 
 	.shift {
