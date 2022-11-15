@@ -40,9 +40,9 @@
 	});
 </script>
 
-<div class="container">
+<!-- <div class="container">
 	<div class="bg" />
-</div>
+</div> -->
 
 <!-- {#if screenType == 1 || screenType == 2} -->
 {#if false}

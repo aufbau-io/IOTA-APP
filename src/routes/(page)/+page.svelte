@@ -2,13 +2,15 @@
 	import { onMount } from 'svelte';
 	import FormField from '$lib/components/common/formField.svelte';
 	import Button from '$lib/components/common/button.svelte';
-	// let Geometry;
+	let Geometry;
 
-	// onMount(async () => {
-	// 	const module = await import('$lib/components/geometry/geometry.svelte');
-	// 	Geometry = module.default;
-	// });
+	onMount(async () => {
+		const module = await import('$lib/components/geometry/geometry.svelte');
+		Geometry = module.default;
+	});
 </script>
+
+<svelte:component this={Geometry} />
 
 <main>
 	<div class="shift">
@@ -41,7 +43,7 @@
 			</div>
 		</form>
 	</div>
-	<!-- <svelte:component this={Geometry} /> -->
+
 	<div class="shadow" />
 </main>
 
@@ -53,9 +55,8 @@
 
 		width: 400px;
 		max-width: calc(100vw - 40px);
-
-		transform: translate(calc(-50% + 5px), -50%);
 		background: var(--background);
+		transform: translate(calc(-50% + 10px), -50%);
 
 		border: solid 1px var(--primary);
 		padding: 30px;
@@ -65,17 +66,17 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		z-index: -1;
+		z-index: -2;
 
 		height: 100%;
 		width: 100%;
-		transform: translate(calc(-50% - 10px), calc(-50% - 10px));
+		transform: translate(calc(-50% - 12px), calc(-50% - 12px));
 		background: var(--background);
 		border: solid 1px var(--primary);
 	}
 
 	.shift {
-		transform: translate(-5px, -5px);
+		transform: translate(-12px, -6px);
 	}
 
 	input {
