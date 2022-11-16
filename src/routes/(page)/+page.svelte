@@ -1,16 +1,7 @@
 <script>
-	import { onMount } from 'svelte';
 	import FormField from '$lib/components/common/formField.svelte';
 	import Button from '$lib/components/common/button.svelte';
-	let Geometry;
-
-	onMount(async () => {
-		const module = await import('$lib/components/geometry/geometry.svelte');
-		Geometry = module.default;
-	});
 </script>
-
-<svelte:component this={Geometry} />
 
 <main>
 	<div class="shift">
