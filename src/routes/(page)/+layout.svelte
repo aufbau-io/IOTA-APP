@@ -15,7 +15,9 @@
 </svelte:head>
 
 <!-- <Header /> -->
-<svelte:component this={Geometry} class="geometry" />
+{#key Geometry}
+	<svelte:component this={Geometry} class="geometry" />
+{/key}
 <main>
 	<slot />
 </main>
