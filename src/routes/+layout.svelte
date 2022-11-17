@@ -40,9 +40,25 @@
 	});
 </script>
 
-<!-- <div class="container">
-	<div class="bg" />
-</div> -->
+<svelte:head>
+	<title>IOTA</title>
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/test-untitled-sans-light.woff2"
+		type="font/woff2"
+		crossorigin="anonymous"
+	/>
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/NB-Architekt-Pro-Regular.woff"
+		type="font/woff"
+		crossorigin="anonymous"
+	/>
+</svelte:head>
 
 <!-- {#if screenType == 1 || screenType == 2} -->
 {#if false}

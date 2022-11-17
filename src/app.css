@@ -41,37 +41,19 @@
 @font-face {
 	font-family: nb-architekt;
 	src: url(/fonts/NB-Architekt-Pro-Regular.woff) format('woff');
-	font-weight: normal;
-	font-style: normal;
+	font-weight: 500;
 }
 
 @font-face {
 	font-family: nb-architekt;
 	src: url(/fonts/NB-Architekt-Pro-Bold.woff) format('woff');
-	font-weight: bold;
-	font-style: normal;
+	font-weight: 700;
 }
 
 @font-face {
 	font-family: nb-architekt;
 	src: url(/fonts/NB-Architekt-Pro-Light.woff) format('woff');
-	font-weight: light;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: nb-television;
-	src: url(/fonts/NB-Television-Pro-Mono.woff) format('woff');
-}
-
-@font-face {
-	font-family: nb-television-2d;
-	src: url(/fonts/NB-Television-Pro-Mono-2D.woff) format('woff');
-}
-
-@font-face {
-	font-family: nb-television-3d;
-	src: url(/fonts/NB-Television-Pro-Mono-3D.woff) format('woff');
+	font-weight: 400;
 }
 
 @font-face {

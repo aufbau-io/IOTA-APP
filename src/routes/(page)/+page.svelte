@@ -92,6 +92,8 @@
 
 	h4 {
 		font-family: nb-architekt;
+		font-weight: 500;
+		letter-spacing: 2.4px;
 	}
 
 	.row {
