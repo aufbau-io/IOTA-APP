@@ -59,6 +59,19 @@
 @font-face {
 	font-family: untitled-serif;
 	src: url(/fonts/test-untitled-serif-regular.woff2) format('woff2');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: untitled-serif;
+	src: url(/fonts/test-untitled-serif-medium.woff2) format('woff2');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: untitled-serif;
+	src: url(/fonts/test-untitled-serif-bold.woff2) format('woff2');
+	font-weight: 700;
 }
 
 /* CUSTOM SCROLLBAR */
@@ -101,11 +114,12 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: nb-architekt;
+	font-family: untitled-serif;
 	color: var(--primary);
+	text-transform: none;
 }
 h1 {
-	font-size: 120px;
+	font-size: 160px;
 	line-height: 100%;
 }
 
