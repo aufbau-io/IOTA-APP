@@ -15,20 +15,20 @@
 
 	let toggleDarkMode = () => {
 		darkMode.set(!$darkMode);
+		document.querySelector(':root').classList.toggle('light-mode');
 	};
 </script>
 
 <header>
 	<div />
 	<!-- <a href="/"><h6>iota</h6> </a> -->
-	<!-- <div />
 	<div on:click={() => toggleDarkMode()} class="darkMode">
-		<p class:selected={$darkMode == true}>day</p>
+		<p class:selected={$darkMode == false}>day</p>
 		<p class="selected">/</p>
-		<p class:selected={$darkMode == false}>night</p>
-	</div> -->
+		<p class:selected={$darkMode == true}>night</p>
+	</div>
 
-	<Nav {navItems} />
+	<!-- <Nav {navItems} /> -->
 </header>
 
 <style>
@@ -44,9 +44,10 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 0 20px;
-		height: 50px;
-		border-bottom: solid 1px var(--primary-50);
+		height: 70px;
+		/* border-bottom: solid 1px var(--accent); */
 		user-select: none;
+		color: var(--primary);
 	}
 
 	.darkMode {

@@ -40,7 +40,7 @@
 
 	// Generating a cloud of point
 	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0xd0d0d0);
+	pcMat.color = new THREE.Color(0x00958a);
 	pcMat.transparent = true;
 	pcMat.size = 0.02;
 	// pcMat.blending = THREE.AdditiveBlending;
