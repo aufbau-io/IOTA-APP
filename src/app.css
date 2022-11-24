@@ -6,9 +6,9 @@
 	--background: #191919;
 	--background-50: #19191980;
 	--primary: #00958a;
-	--primary-10: #e0e0e01a;
-	--primary-30: #e0e0e04d;
-	--primary-50: #e0e0e080;
+	--primary-10: #00958a1a;
+	--primary-30: #00958a4d;
+	--primary-50: #00958a80;
 	--accent: #00958a;
 	--error: #be4040;
 	font-weight: 300;
@@ -17,11 +17,11 @@
 :root.light-mode {
 	--background: #d0d0d0;
 	--background-50: #d0d0d080;
-	--primary: #00958a;
+	--primary: #232323;
 	--primary-10: #2323231a;
 	--primary-30: #2323234d;
 	--primary-50: #23232380;
-	--accent: #00958a;
+	--accent: #232323;
 	--error: #be4040;
 	font-weight: 400;
 }
