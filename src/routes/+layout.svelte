@@ -1,8 +1,8 @@
 <script>
 	import '../app.css';
 	import { onMount } from 'svelte';
+	import { screenType, darkMode } from '$lib/store/store';
 
-	let screenType;
 	onMount(async () => {
 		// ---------------------------------------------------------------------------
 		// HEIGHT
@@ -25,23 +25,41 @@
 		const ua = navigator.userAgent;
 		if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
 			// tablet
-			screenType = 1;
+			screenType.set(2);
 		} else if (
 			/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
 				ua
 			)
 		) {
 			// phone
-			screenType = 2;
+			// darkMode.set(false);
+			// document.querySelector(':root').classList.toggle('dark-mode');
+			screenType.set(3);
 		} else {
 			//laptop
-			screenType = 3;
+			screenType.set(1);
 		}
 	});
 </script>
 
 <svelte:head>
 	<title>IOTA</title>
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/NB-Architekt-Pro-Light.woff"
+		type="font/woff"
+		crossorigin="anonymous"
+	/>
+
+	<link
+		rel="preload"
+		as="font"
+		href="/fonts/NB-Architekt-Pro-Regular.woff"
+		type="font/woff"
+		crossorigin="anonymous"
+	/>
 
 	<link
 		rel="preload"
@@ -54,8 +72,8 @@
 	<link
 		rel="preload"
 		as="font"
-		href="/fonts/NB-Architekt-Pro-Regular.woff"
-		type="font/woff"
+		href="/fonts/test-untitled-sans-regular.woff2"
+		type="font/woff2"
 		crossorigin="anonymous"
 	/>
 </svelte:head>
@@ -63,8 +81,8 @@
 <!-- {#if screenType == 1 || screenType == 2} -->
 {#if false}
 	<div id="phoneBlock"><p class="sml">wip, use desktop</p></div>
-{:else}
-	<slot />
+{:else if $screenType}
+	<main><slot /></main>
 {/if}
 
 <style>
@@ -80,37 +98,14 @@
 		height: 100vh;
 		height: calc(var(--vh, 1vh) * 100);
 
-		width: 100vw;
+		width: 100%;
 		background: var(--background);
 		z-index: 1000;
 	}
 
-	.container {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+	main {
 		overflow: hidden;
-	}
-
-	.bg {
-		width: 400%;
-		height: 400%;
-		background: linear-gradient(0.33turn, #f6a192, #ffd9df, #f6c492, #f6a192);
-		background-size: 100% 100%;
-		animation: GradientBackground 50s ease infinite;
-	}
-
-	@keyframes GradientBackground {
-		0% {
-			transform: translate(0, -50%);
-		}
-		50% {
-			transform: translate(-75%, 0);
-		}
-		100% {
-			transform: translate(0, -50%);
-		}
+		height: 100%;
+		width: 100%;
 	}
 </style>

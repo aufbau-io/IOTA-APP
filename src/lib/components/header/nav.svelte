@@ -1,5 +1,4 @@
 <script>
-	import { user } from '$lib/store/store';
 	import { page } from '$app/stores';
 
 	let loggedIn = false;
@@ -15,30 +14,28 @@
 </script>
 
 <nav>
-	{#if loggedIn}
-		{#each navItems as navItem}
-			<a href={navItem.href} class:active={navItem.href === $page.url.pathname}
-				>[&nbsp;{navItem.name}&nbsp;]</a
-			>
-		{/each}
-	{:else}
-		<a href="https://aufbau.io" target="_blank">EIN AUFBAU DING</a>
-	{/if}
+	<!-- {#each navItems as navItem}
+		<a href={navItem.href} class="" class:active={navItem.href === $page.url.pathname}
+			>{navItem.name}</a
+		>
+	{/each} -->
+
+	<a href="https://iota.health" target="_blank">LEARN MORE</a>
 </nav>
 
 <style>
 	nav {
 		display: flex;
 		flex-flow: comumn nowrap;
+		color: var(--primary);
 	}
 	nav a,
 	nav p {
 		line-height: 110%;
-		font-weight: 400;
-		letter-spacing: 0.05em;
-		padding: 10px;
+		text-transform: none;
+		letter-spacing: 0.1em;
+		padding: 16px;
 		cursor: pointer;
-		opacity: 0.4;
 	}
 
 	nav a:hover {

@@ -4,7 +4,7 @@
 </script>
 
 <main>
-	<div class="shift">
+	<section>
 		<div class="row">
 			<p class="field" />
 		</div>
@@ -33,25 +33,27 @@
 				<Button text="log in" />
 			</div>
 		</form>
-	</div>
-
-	<div class="shadow" />
+	</section>
 </main>
 
 <style>
 	main {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-
-		width: 400px;
-		max-width: calc(100vw - 40px);
+		width: 100%;
+		margin-top: 320px;
+		height: 320px;
 		background: var(--background);
-		transform: translate(calc(-50% + 6px), -50%);
 
-		border: solid 1px var(--accent);
-		color: var(--accent);
+		border-top: solid 1px var(--primary-50);
+		border-bottom: solid 1px var(--primary-50);
+
 		padding: 40px 30px;
+	}
+
+	section {
+		padding: 40px;
+
+		max-width: 600px;
+		margin: auto;
 	}
 
 	.shadow {
@@ -64,7 +66,7 @@
 		width: 100%;
 		transform: translate(calc(-50% - 12px), calc(-50% - 12px));
 		background: var(--background);
-		border: solid 1px var(--accent);
+		border: solid 1px var(--primary);
 	}
 
 	.shift {
@@ -124,6 +126,11 @@
 	@media only screen and (max-width: 768px) {
 		main {
 			padding: 32px 20px;
+			margin: auto;
+			height: 240px;
+		}
+		section {
+			padding: 8px 0;
 		}
 		form {
 			padding-bottom: 0;

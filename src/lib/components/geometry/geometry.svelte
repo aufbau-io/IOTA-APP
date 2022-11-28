@@ -1,10 +1,14 @@
 <script>
 	import { onMount } from 'svelte';
+	import { darkMode } from '$lib/store/store';
 	import * as THREE from 'three';
 
 	let container, pc;
 	// Setting up the scene
 	let scene = new THREE.Scene();
+
+	let green = new THREE.Color(0xd9e69f);
+	let black = new THREE.Color(0x232323);
 
 	let height = window.innerHeight;
 	// let width = (window.innerWidth / 5) * 4;
@@ -18,7 +22,7 @@
 	let renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(width, height);
-	renderer.setClearColor(0xfafafa, 0);
+	renderer.setClearColor(0xf4f4f4, 0);
 	onMount(() => {
 		container.appendChild(renderer.domElement);
 	});
@@ -40,9 +44,11 @@
 
 	// Generating a cloud of point
 	let pcMat = new THREE.PointsMaterial();
-	pcMat.color = new THREE.Color(0x00958a);
+
+	$: pcMat.color = $darkMode ? green : black;
+
 	pcMat.transparent = true;
-	pcMat.size = 0.03;
+	pcMat.size = 0.02;
 	// pcMat.blending = THREE.AdditiveBlending;
 	pc = new THREE.Points(geometry, pcMat);
 	pc.sizeAttenuation = true;
@@ -146,7 +152,7 @@
 <style>
 	.geometry {
 		overflow: hidden;
-		opacity: 0.5;
+		opacity: 0.8;
 		z-index: -10;
 	}
 </style>

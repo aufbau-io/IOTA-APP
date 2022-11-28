@@ -3,27 +3,41 @@
 
 /* APP */
 :root {
-	--background: #191919;
-	--background-50: #19191980;
-	--primary: #00958a;
-	--primary-10: #00958a1a;
-	--primary-30: #00958a4d;
-	--primary-50: #00958a80;
-	--accent: #00958a;
-	--error: #be4040;
-	font-weight: 300;
-}
-
-:root.light-mode {
-	--background: #d0d0d0;
-	--background-50: #d0d0d080;
+	--black: #191919;
+	--toggle: #232323;
+	--outline-hero: #232323;
+	--background: linear-gradient(115deg, #ededed, #ede7d9, #ededed);
+	--background-fallback: #edeae3;
+	--background-fallback-50: #edeae380;
+	--background-alt: linear-gradient(45deg, #1b1b1b, #171717);
+	--button-alt: linear-gradient(115deg, #ededed, #ede7d9, #ededed);
 	--primary: #232323;
 	--primary-10: #2323231a;
 	--primary-30: #2323234d;
 	--primary-50: #23232380;
-	--accent: #232323;
+	--accent: #ede7d9;
+	--accent-50: #ede7d980;
 	--error: #be4040;
-	font-weight: 400;
+	font-weight: 300;
+}
+
+:root.dark-mode {
+	--black: #191919;
+	--toggle: #d9e69f;
+	--outline-hero: #ede7d980;
+	--background: linear-gradient(45deg, #1b1b1b, #171717);
+	--background-fallback: #191919;
+	--background-fallback-50: #19191980;
+	--background-alt: linear-gradient(45deg, #1b1b1b, #171717);
+	--button-alt: #ede7d9;
+	--primary: #ede7d9;
+	--primary-10: #ede7d91a;
+	--primary-30: #ede7d94d;
+	--primary-50: #ede7d980;
+	--accent: #ede7d9;
+	--accent-50: #ede7d980;
+	--error: #be4040;
+	font-weight: 300;
 }
 
 @font-face {
@@ -32,11 +46,12 @@
 	font-weight: 500;
 }
 
+/* 
 @font-face {
 	font-family: nb-architekt;
 	src: url(/fonts/NB-Architekt-Pro-Bold.woff) format('woff');
 	font-weight: 700;
-}
+} */
 
 @font-face {
 	font-family: nb-architekt;
@@ -56,30 +71,12 @@
 	font-weight: 400;
 }
 
-@font-face {
-	font-family: untitled-serif;
-	src: url(/fonts/test-untitled-serif-regular.woff2) format('woff2');
-	font-weight: 400;
-}
-
-@font-face {
-	font-family: untitled-serif;
-	src: url(/fonts/test-untitled-serif-medium.woff2) format('woff2');
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: untitled-serif;
-	src: url(/fonts/test-untitled-serif-bold.woff2) format('woff2');
-	font-weight: 700;
-}
-
 /* CUSTOM SCROLLBAR */
 
 /* width */
 ::-webkit-scrollbar {
-	width: 6px;
-	height: 6px;
+	width: 0px;
+	height: 0px;
 }
 
 /* Track */
@@ -97,11 +94,12 @@
 
 body,
 html {
-	box-sizing: border-box;
+	background: var(--background-fallback);
 }
 
 body {
-	font-family: untitled-sans;
+	font-family: untitled-sans, sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: var(--primary);
 	background: var(--background);
@@ -114,12 +112,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: untitled-serif;
-	color: var(--primary);
 	text-transform: none;
 }
 h1 {
-	font-size: 160px;
+	font-family: untitled-serif;
+	font-size: 180px;
 	line-height: 100%;
 }
 
@@ -139,7 +136,7 @@ h3 {
 }
 
 h4 {
-	font-size: 36px;
+	font-size: 34px;
 	line-height: 120%;
 }
 
@@ -156,12 +153,17 @@ h6 {
 span,
 p {
 	font-size: 16px;
-	line-height: 150%;
+	line-height: 175%;
+}
+
+span.xl,
+p.xl {
+	font-size: 18px;
 }
 
 span.lrg,
 p.lrg {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 span.sml,
@@ -195,12 +197,11 @@ p.sml.mono {
 p.btn,
 a {
 	letter-spacing: 0.05em;
-	font-weight: 300;
 }
 
 p.btn.lrg,
 a.lrg {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 p.btn.sml,
@@ -210,9 +211,14 @@ a.sml {
 
 /* MOBILE SCREENS */
 @media only screen and (max-width: 768px) {
+	body,
+	html {
+		margin: -2px 0;
+	}
+
 	/* HEADING */
 	h1 {
-		font-size: 56px;
+		font-size: 82px;
 	}
 
 	h2 {
@@ -224,23 +230,21 @@ a.sml {
 	}
 
 	h4 {
-		font-size: 30px;
+		font-size: 22px;
 	}
 
 	h5 {
 		font-size: 18px;
-		font-weight: 300;
 	}
 
 	h6 {
-		font-size: 16px;
-		font-weight: 300;
+		font-size: 14px;
 	}
 
 	/* BODY */
 	p {
 		font-size: 14px;
-		line-height: 150%;
+		line-height: 175%;
 	}
 
 	p.lrg {
