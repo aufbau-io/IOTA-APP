@@ -11,7 +11,7 @@
 		<div class="row">
 			<h5 class="title">IOTA</h5>
 			<div>
-				<h5 class="xl">mental state tracking</h5>
+				<h5 class="xl">version: 0.0.1</h5>
 			</div>
 		</div>
 		<div class="row">
