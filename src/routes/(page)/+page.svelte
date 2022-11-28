@@ -109,10 +109,10 @@
 		main {
 			padding: 32px 20px;
 			margin: auto;
-			height: 240px;
+			height: 260px;
 		}
 		section {
-			padding: 8px 0;
+			padding: 10px 16px;
 		}
 		form {
 			padding-bottom: 0;
