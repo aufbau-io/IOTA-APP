@@ -9,9 +9,9 @@
 			<p class="field" />
 		</div>
 		<div class="row">
-			<h5 class="title">IOTA</h5>
+			<h5 class="title" />
 			<div>
-				<h5 class="xl">version: 0.0.1</h5>
+				<h5 class="xl">IOTA - v:0.0.1</h5>
 			</div>
 		</div>
 		<div class="row">
