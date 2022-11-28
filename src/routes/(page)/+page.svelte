@@ -9,10 +9,8 @@
 			<p class="field" />
 		</div>
 		<div class="row">
-			<h5 class="title" />
-			<div>
-				<h5 class="xl">IOTA - v:0.0.1</h5>
-			</div>
+			<h5 class="xl">IOTA - v:0.0.1</h5>
+			<div />
 		</div>
 		<div class="row">
 			<p class="field" />
@@ -73,14 +71,17 @@
 		border-radius: 0;
 		background: none;
 		border-bottom: solid 1px var(--primary-50);
+		font-family: untitled-sans;
+		font-size: 18px;
 		margin-bottom: 16px;
+
 		width: 75%;
 	}
 	input:focus {
 		outline: none;
 	}
 
-	h5.title {
+	h5 {
 		font-weight: 500;
 		letter-spacing: 2px;
 	}
@@ -109,10 +110,10 @@
 		main {
 			padding: 32px 20px;
 			margin: auto;
-			height: 260px;
+			height: 280px;
 		}
 		section {
-			padding: 10px 16px;
+			padding: 10px 8px;
 		}
 		form {
 			padding-bottom: 0;
