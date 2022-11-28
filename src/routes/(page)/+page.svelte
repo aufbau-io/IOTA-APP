@@ -9,10 +9,9 @@
 			<p class="field" />
 		</div>
 		<div class="row">
-			<h4 class="title">IOTA</h4>
+			<h5 class="title">IOTA</h5>
 			<div>
-				<p>mental state tracking</p>
-				<p class="mono">version: 0.0.1</p>
+				<h5 class="xl">mental state tracking</h5>
 			</div>
 		</div>
 		<div class="row">
@@ -22,15 +21,18 @@
 
 		<form>
 			<div class="row">
-				<p class="field">username</p>
+				<h6 class="field">username</h6>
 				<input type="text" />
 			</div>
 			<div class="row">
-				<p class="field">password</p>
+				<h6 class="field">password</h6>
 				<input type="password" />
 			</div>
-			<div class="row right muted">
-				<Button text="log in" />
+			<div class="row">
+				<div class="field" />
+				<div class="long">
+					<Button size="lrg" text="log in" fluid={true} />
+				</div>
 			</div>
 		</form>
 	</section>
@@ -40,41 +42,27 @@
 	main {
 		width: 100%;
 		margin-top: 320px;
-		height: 280px;
+		height: 400px;
 		background: var(--background);
 
 		border-top: solid 1px var(--primary-50);
 		border-bottom: solid 1px var(--primary-50);
 
+		font-family: nb-architekt, sans-serif;
+		font-weight: 400;
+
 		padding: 40px 30px;
 	}
 
 	section {
-		padding: 20px;
-
+		padding: 32px;
 		max-width: 600px;
 		margin: auto;
 	}
 
-	.shadow {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		z-index: -2;
-
-		height: 100%;
-		width: 100%;
-		transform: translate(calc(-50% - 12px), calc(-50% - 12px));
-		background: var(--background);
-		border: solid 1px var(--primary);
-	}
-
-	.shift {
-		transform: translate(-12px, -6px);
-	}
-
-	.muted {
-		color: var(--primary-50);
+	.long {
+		width: 75%;
+		margin-top: 16px;
 	}
 
 	input {
@@ -86,36 +74,30 @@
 		background: none;
 		border-bottom: solid 1px var(--primary-50);
 		margin-bottom: 10px;
-		width: 65%;
+		width: 75%;
 	}
 	input:focus {
 		outline: none;
 	}
 
-	h4 {
-		font-family: nb-architekt;
+	h5.title {
 		font-weight: 500;
-		letter-spacing: 2.4px;
+		letter-spacing: 2px;
 	}
 
 	.row {
 		width: 100%;
 		display: flex;
-		align-items: center;
-	}
-
-	.row.right {
-		justify-content: end;
-		margin-top: 10px;
+		align-items: flex-start;
 	}
 
 	.field {
-		width: 35%;
+		width: 25%;
 		display: inline;
 	}
 
 	.title {
-		width: 35%;
+		width: 25%;
 		display: inline;
 	}
 
