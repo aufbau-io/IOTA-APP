@@ -42,7 +42,7 @@
 	main {
 		width: 100%;
 		margin-top: 320px;
-		height: 400px;
+		height: 360px;
 		background: var(--background);
 
 		border-top: solid 1px var(--primary-50);
@@ -55,7 +55,7 @@
 	}
 
 	section {
-		padding: 32px;
+		padding: 40px;
 		max-width: 600px;
 		margin: auto;
 	}
