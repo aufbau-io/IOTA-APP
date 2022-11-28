@@ -40,7 +40,7 @@
 	main {
 		width: 100%;
 		margin-top: 320px;
-		height: 320px;
+		height: 280px;
 		background: var(--background);
 
 		border-top: solid 1px var(--primary-50);
@@ -50,7 +50,7 @@
 	}
 
 	section {
-		padding: 40px;
+		padding: 20px;
 
 		max-width: 600px;
 		margin: auto;
