@@ -20,7 +20,7 @@
 		>
 	{/each} -->
 
-	<a href="https://iota.health" target="_blank">PRIVATE BETA - LEARN MORE</a>
+	<a href="https://iota.health">PRIVATE BETA - LEARN MORE</a>
 </nav>
 
 <style>
