@@ -55,7 +55,7 @@
 	}
 
 	section {
-		padding: 40px;
+		padding: 32px;
 		max-width: 600px;
 		margin: auto;
 	}
@@ -73,7 +73,7 @@
 		border-radius: 0;
 		background: none;
 		border-bottom: solid 1px var(--primary-50);
-		margin-bottom: 10px;
+		margin-bottom: 16px;
 		width: 75%;
 	}
 	input:focus {

@@ -33,7 +33,7 @@
 		border: solid 1px var(--accent);
 		background: var(--black);
 		color: var(--accent);
-		padding: 16px;
+		padding: 12px;
 		border-radius: 24px;
 		font-family: nb-architekt;
 		letter-spacing: 0.2em;
